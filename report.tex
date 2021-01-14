@@ -1,0 +1,30 @@
+\documentclass[11pt]{article}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{tikz}
+\usepackage{tkz-kiviat}
+\usepackage{geometry}
+\geometry{a4paper, margin=.5in}
+\usetikzlibrary{arrows}
+\usepackage{etoolbox}
+\sisetup{
+	detect-weight=true,
+	detect-family=true,
+	separate-uncertainty=true,
+	multi-part-units=single
+}
+
+\begin{document}
+\robustify\bfseries
+
+\input{results/tab_BAC_mean_ranks}
+\input{results/tab_F-1_mean_ranks}
+\input{results/tab_GMN_mean_ranks}
+\input{results/tab_PRE_mean_ranks}
+\input{results/tab_REC_mean_ranks}
+\input{results/tab_SPE_mean_ranks}
+
+\end{document}
